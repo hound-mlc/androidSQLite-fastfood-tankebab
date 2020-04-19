@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="fondos">
+        <item>Pan trigo</item>
+        <item>Carne</item>
+        <item>Lechuga</item>
+        <item>Tomate</item>
+        <item>Patatas fritas</item>
+    </string-array>
+
+    <string-array name="fondos_imagen">
+        <item>taco</item>
+        <item>descarga</item>
+        <item>lechuga</item>
+        <item>tomates</item>
+        <item>papas</item>
+    </string-array>
+</resources>

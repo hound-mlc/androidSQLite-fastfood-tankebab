@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clPers"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/descarga">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="218dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="87dp"
+        android:background="@drawable/tag"
+        android:gravity="center"
+        android:text="Personaliza tu kebab"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="136dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/fondo_confirm"
+        android:gravity="center"
+        android:text="Tipo"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="317dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="38dp"
+        android:background="@drawable/fondo_confirm"
+        android:gravity="center"
+        android:text="Ingredientes"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="136dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/fondo_confirm"
+        android:gravity="center"
+        android:text="Carne"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <RadioGroup
+        android:id="@+id/rgTipo"
+        android:layout_width="136dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="53dp"
+        android:background="@drawable/fondo_confirm"
+        app:layout_constraintEnd_toStartOf="@+id/rgCarne"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+        <RadioButton
+            android:id="@+id/rbDurum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/rbDoner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/rbLahma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rgCarne"
+        android:layout_width="136dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/fondo_confirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+        <RadioButton
+            android:id="@+id/rbPollo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/rbTernera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/rbMixto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton" />
+    </RadioGroup>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="304dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="38dp"
+        android:background="@drawable/fondo_confirm"
+        android:stretchColumns="*"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CheckBox" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CheckBox" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CheckBox" />
+
+            <CheckBox
+                android:id="@+id/checkBox6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CheckBox" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/checkBox7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CheckBox" />
+
+            <CheckBox
+                android:id="@+id/checkBox8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CheckBox" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/checkBox9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CheckBox" />
+
+            <CheckBox
+                android:id="@+id/checkBox10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CheckBox" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="156dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginBottom="39dp"
+        android:background="@drawable/btnweb"
+        android:text="Pedir"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
